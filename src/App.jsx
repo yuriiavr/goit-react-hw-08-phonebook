@@ -35,7 +35,7 @@ export default function App() {
   ) : (
     <Routes>
       <Route path="/" element={<AppBar />}>
-        <Route index element={<ContactsPage />} />
+        <Route index element={<HomePage />} />
         <Route
           path="contacts"
           element={
