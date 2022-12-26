@@ -27,7 +27,7 @@ export default function App() {
   }, [dispatch]);
 
   return isFetchingCurrentUser ? (
-    <Box sx={{ width: 900 }}>
+    <Box sx={{ width: 300 }}>
       <Skeleton />
       <Skeleton animation="wave" />
       <Skeleton animation={false} />
