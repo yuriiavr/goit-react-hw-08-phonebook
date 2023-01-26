@@ -1,9 +1,21 @@
+import css from './HomePage.module.css';
+
 export default function HomePage() {
     return (
       <>
         <section>
-          <h1>Home Page</h1>
-          <img src="https://cdn.dribbble.com/users/78806/screenshots/6746963/ios_13_caller_4-2_4x.png?compress=1&resize=1000x750&vertical=top" alt="" />
+          <h1 className={css.heading}>Welcome to your Phonebook</h1>
+          <div className={css.cont}>
+            <div className={css.posible_cont}>
+              <h2 className={css.title}>What can you do with our app?</h2>
+              <ul className={css.posible_list}>
+                <li>Save contacts</li>
+                <li>Delate contacts</li>
+                <li>Search contacts by name</li>
+              </ul>
+            </div>
+          </div>
+          
         </section>
       </>
     );

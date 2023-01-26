@@ -4,7 +4,7 @@ import css from './AuthNav.module.css';
 const AuthNav = () => {
   return (
     <>
-      <div>
+      <div className={css.link_cont}>
         <NavLink
           to="/register"
           className={navData => (navData.isActive ? css.activeLink : css.link)}

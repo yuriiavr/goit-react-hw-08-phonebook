@@ -7,7 +7,7 @@ const Navigation = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   return (
     <>
-      <nav>
+      <nav className={css.nav_cont}>
         <NavLink
           to="/"
           className={navData => (navData.isActive ? css.activeLink : css.link)}

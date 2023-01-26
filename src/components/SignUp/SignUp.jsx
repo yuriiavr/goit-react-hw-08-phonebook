@@ -47,13 +47,13 @@ export default function SignUp() {
 
   return (
     <div>
-      <h1>Registration page</h1>
+      <h1 className={css.singup_heading}>Registration page</h1>
 
       <Form onSubmit={handleSubmit} className={css.form} autoComplete="off">
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label className={css.label}>
             Your Name
-            <Form.Control
+            <Form.Control className={css.input}
               type="text"
               name="name"
               value={name}
@@ -65,7 +65,7 @@ export default function SignUp() {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className={css.label}>
             Your E-mail
-            <Form.Control
+            <Form.Control className={css.input}
               type="email"
               name="email"
               value={email}
@@ -77,7 +77,7 @@ export default function SignUp() {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className={css.label}>
             Create password
-            <Form.Control
+            <Form.Control className={css.input}
               type="password"
               name="password"
               value={password}
@@ -86,7 +86,7 @@ export default function SignUp() {
           </Form.Label>
         </Form.Group>
 
-        <Button type="submit">Sign up</Button>
+        <Button className={css.reg_btn} type="submit">Sign up</Button>
       </Form>
     </div>
   );

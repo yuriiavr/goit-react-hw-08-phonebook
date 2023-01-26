@@ -41,13 +41,13 @@ export default function SignIn() {
 
   return (
     <div>
-      <h1>Authorization page</h1>
+      <h1 className={css.singin_heading}>Authorization page</h1>
 
       <Form onSubmit={handleSubmit} className={css.form} autoComplete="off">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className={css.label}>
             Email address
-            <Form.Control
+            <Form.Control className={css.input}
               type="email"
               name="email"
               value={email}
@@ -59,7 +59,7 @@ export default function SignIn() {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className={css.label}>
             Password
-            <Form.Control
+            <Form.Control className={css.input}
               type="password"
               name="password"
               value={password}
@@ -67,7 +67,7 @@ export default function SignIn() {
             />
           </Form.Label>
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className={css.reg_btn} variant="primary" type="submit">
           Sign in
         </Button>
       </Form>

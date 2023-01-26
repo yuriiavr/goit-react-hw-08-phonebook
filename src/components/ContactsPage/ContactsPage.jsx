@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <div>
       <Container>
-        <h1>Phone Book</h1>
+        <h1 className={css.contact_heading}>Phone Book</h1>
         <div className={css.Table}>
           <div>
             <h2 className={css.ListName}>Adding contacts</h2>
