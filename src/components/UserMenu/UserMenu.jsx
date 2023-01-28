@@ -6,7 +6,7 @@ export default function UserMenu({ email }) {
   const dispatch = useDispatch();
   return (
     <div>
-      <a href="mailto: {email}" className={css.Email}>
+      <a href="mailto: {email}" className={css.email}>
         {email}
       </a>
       <button className={css.logout_btn} type="button" onClick={() => dispatch(authOperations.logOut())}>
