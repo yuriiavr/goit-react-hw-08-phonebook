@@ -2,7 +2,7 @@ const getIsLoggedIn = state => state.auth.isLoggedIn;
 
 const getUserName = state => state.auth.user.name;
 
-const getEmail = state => state.auth.user.email;
+const getEmail = state => state.auth.user;
 
 const getIsFetchingCurrent = state => state.auth.isFetchingCurrentUser;
 
