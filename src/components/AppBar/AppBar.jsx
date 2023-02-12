@@ -5,12 +5,14 @@ import Container from 'components/Container';
 import UserMenu from 'components/UserMenu';
 import css from './AppBar.module.css';
 import AuthNav from 'components/authNav';
-import {authSelectors} from '../../redux/auth/authSelectors';
+import authSelectors from '../../redux/auth/authSelectors';
 import { Suspense } from 'react';
 
 export default function AppBar() {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   const email = useSelector(authSelectors.getEmail);
+
+  console.log(getEmail)
   return (
     <>
       <Container>
