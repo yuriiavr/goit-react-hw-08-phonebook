@@ -12,6 +12,7 @@ export default function AppBar() {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
   const email = useSelector(authSelectors.getEmail);
 
+  console.log(email)
   return (
     <>
       <Container>
