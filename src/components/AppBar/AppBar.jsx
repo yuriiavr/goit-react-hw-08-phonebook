@@ -13,6 +13,7 @@ export default function AppBar() {
   const email = useSelector(authSelectors.getEmail);
 
   console.log(email)
+
   return (
     <>
       <Container>

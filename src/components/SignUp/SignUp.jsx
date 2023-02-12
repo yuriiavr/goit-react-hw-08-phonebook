@@ -47,7 +47,7 @@ export default function SignUp() {
 
   return (
     <div>
-      <h1>Registration page</h1>
+      <h1 className={css.regTitle}>Registration page</h1>
 
       <Form onSubmit={handleSubmit} className={css.form} autoComplete="off">
         <Form.Group className="mb-3" controlId="formBasicName">
